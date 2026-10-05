@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="/frontend/compartilhado/tema-inicial.js"></script>
+  <link rel="stylesheet" href="/frontend/compartilhado/tokens.css">
+  <link rel="stylesheet" href="/frontend/compartilhado/base.css">
+  <link rel="stylesheet" href="/frontend/paginas/painel/painel.css">
+  <title>Painel — Freelancer Automático</title>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="identidade"><div class="simbolo">AF</div><div><strong>Freelancer</strong><span>Automático</span></div></div>
+      <nav>
+        <a class="ativo" href="/painel" data-texto="painel">Painel</a>
+        <a href="#" data-texto="oportunidades">Oportunidades</a>
+        <a href="#" data-texto="propostas">Propostas</a>
+        <a href="#" data-texto="conversas">Conversas</a>
+        <a href="#" data-texto="automacao">Automação</a>
+        <a href="#" data-texto="integracoes">Integrações</a>
+      </nav>
+      <div class="rodape-lateral"><span>●</span><small data-texto="modo">Modo teste</small></div>
+    </aside>
+    <main>
+      <header>
+        <div><small data-texto="saudacao">Central operacional</small><h1 data-texto="titulo">Visão geral</h1></div>
+        <div class="acoes"><button data-idioma="pt-br">PT</button><button data-idioma="en">EN</button><button id="tema" data-texto="tema">Tema</button></div>
+      </header>
+      <section class="alerta"><b>●</b><div><strong data-texto="modoAtivo">Modo de teste ativo</strong><span data-texto="modoDesc">Nenhuma ação externa real será executada.</span></div></section>
+      <section class="metricas">
+        <article><span data-texto="encontrados">Encontrados hoje</span><strong>0</strong><small data-texto="aguardando">Aguardando integração</small></article>
+        <article><span data-texto="analisados">Analisados</span><strong>0</strong><small>0%</small></article>
+        <article><span data-texto="propostasMetrica">Propostas</span><strong>0</strong><small data-texto="nenhuma">Nenhuma enviada</small></article>
+        <article><span data-texto="potencial">Receita potencial</span><strong>R$ 0</strong><small data-texto="semDados">Sem dados reais</small></article>
+      </section>
+      <section class="principal-grid">
+        <article class="cartao feed">
+          <div class="cartao-topo"><h2 data-texto="feed">Feed operacional</h2><span class="online" data-texto="online">Núcleo online</span></div>
+          <div class="vazio"><div class="orbe"></div><strong data-texto="vazioTitulo">Tudo quieto por enquanto</strong><p data-texto="vazioDesc">As atividades aparecerão aqui quando uma integração começar a monitorar oportunidades.</p></div>
+        </article>
+        <article class="cartao automacao-card">
+          <div class="cartao-topo"><h2 data-texto="estado">Automação</h2><span>PAUSADO</span></div>
+          <div class="medidor"><i></i></div>
+          <dl>
+            <div><dt data-texto="sessao">Sessão</dt><dd>0 min</dd></div>
+            <div><dt data-texto="proxima">Próxima execução</dt><dd>—</dd></div>
+            <div><dt data-texto="limite">Limite diário</dt><dd>0 / 20</dd></div>
+          </dl>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/frontend/paginas/painel/painel.js"></script>
+</body>
+</html>

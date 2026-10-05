@@ -1,0 +1,1 @@
+{"orquestrador":["package.json",".gitignore",".env.exemplo","CHECKLIST.md","docs/**",".orquestracao/**"],"agente-servidor":["servidor/**","scripts/parar-servidor.js"],"agente-interface":["frontend/**"],"agente-testes":["testes/**","scripts/verificar.js"]}

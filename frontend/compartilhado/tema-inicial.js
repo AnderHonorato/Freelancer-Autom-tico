@@ -1,0 +1,1 @@
+(()=>{const salvo=localStorage.getItem("tema");const escuro=matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.dataset.tema=salvo||(escuro?"escuro":"claro")})();

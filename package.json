@@ -1,0 +1,24 @@
+{
+  "name": "freelancer-automatico",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "desenvolver": "node --watch servidor/servidor.js",
+    "iniciar": "node servidor/servidor.js",
+    "parar": "node scripts/parar-servidor.js",
+    "verificar": "node scripts/verificar.js",
+    "testar": "node --test testes/*.test.js",
+    "testar:visual": "node scripts/testar-visual.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}
